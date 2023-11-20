@@ -6,5 +6,5 @@ module.exports = async function (taskArgs, hre, runSuper) {
     }
     let tx = await (await relayer.setApprovedAddress(taskArgs.address, taskArgs.enable)).wait()
     console.log(`tx: ${tx.transactionHash}`)
-    console.log(`Relayer.setApprovedAddress(${taskArgs.address}, ${taskArgs.enable}) | tx: ${tx.transactionHash}`)
+    console.log(`Relayer.setApprovedAddress(${taskArgs.address}. ${taskArgs.enable}) | tx: ${tx.transactionHash}`)
 }
